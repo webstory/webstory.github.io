@@ -292,5 +292,6 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
 
 # date_format: "%Y-%d-%d"
