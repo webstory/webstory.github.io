@@ -5,6 +5,7 @@ tag:
 author_profile: false
 sidebar:
   nav: "how-to-github-pages"
+# search: false # default true
 ---
 
 # Hello World
@@ -88,6 +89,7 @@ defaults:
       related: true
       show_date: true
       toc: true # 이것을 추가
+      toc_sticky: true # 이것을 추가
 ```
 
 ### 404 Not Found

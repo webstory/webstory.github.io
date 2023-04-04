@@ -293,5 +293,6 @@ defaults:
       related: true
       show_date: true
       toc: true
+      toc_sticky: true
 
 # date_format: "%Y-%d-%d"
