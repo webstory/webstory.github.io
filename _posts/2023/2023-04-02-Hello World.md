@@ -2,6 +2,9 @@
 category: 2023
 tag:
   ["hello_world", "2023", "jekyll", "github_pages", "minimal-mistakes", "dev"]
+author_profile: false
+sidebar:
+  nav: "how-to-github-pages"
 ---
 
 # Hello World
