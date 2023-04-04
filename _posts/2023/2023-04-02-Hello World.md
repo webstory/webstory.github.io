@@ -12,9 +12,10 @@ if __name__ == '__main__':
     print("Hello world!")
 ```
 
-![200308-Hoya](./img/2023-04-02-Hello%20World/200308-Hoya.png)
+![200308-Hoya](/assets/images/2023/2023-04-02-Hello%20World/200308-Hoya.png)
 
 ## 이 블로그를 preview 모드로 실행하는 법
+
 ```powershell
 bundle exec jekyll serve
 ```

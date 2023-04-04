@@ -26,5 +26,5 @@ gem "minimal-mistakes-jekyll"
 # If you have any other plugins, put them here!
 # Cf. https://jekyllrb.com/docs/plugins/installation/
 group :jekyll_plugins do
-  gem 'jekyll-postfiles' # https://nhoizey.github.io/jekyll-postfiles/
+  # gem 'jekyll-postfiles' # https://nhoizey.github.io/jekyll-postfiles/
 end
