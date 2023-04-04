@@ -15,6 +15,7 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem "minimal-mistakes-jekyll"
+gem "jekyll-sass-converter", "~> 2.0"
 
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
@@ -28,3 +29,7 @@ gem "minimal-mistakes-jekyll"
 group :jekyll_plugins do
   # gem 'jekyll-postfiles' # https://nhoizey.github.io/jekyll-postfiles/
 end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
