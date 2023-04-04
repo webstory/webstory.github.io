@@ -62,3 +62,45 @@ gem "jekyll"
 gem "minimal-mistakes-jekyll"
 gem "jekyll-sass-converter", "~> 2.0"
 ```
+
+### TOC
+
+TOC를 추가하는 방법
+
+\_config.yml 파일에 아래 변수 추가
+
+```yaml
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      toc: true # 이것을 추가
+```
+
+### 404 Not Found
+
+\_pages/404.md 파일을 만들고 https://codepen.io/sarazond/pen/jOKyjZ 의 내용을 복사.
+frontmatter는 아래 예제를 참고.
+
+페이지 템플릿은 https://freefrontend.com/html-css-404-page-templates/ 여기서 받았습니다.
+
+```md
+---
+title: "Page Not Found"
+excerpt: "Page not found. Your pixels are in another canvas."
+sitemap: false
+permalink: /404.html
+---
+
+<!-- https://codepen.io/sarazond/pen/jOKyjZ -->
+```
