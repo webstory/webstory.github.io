@@ -11,6 +11,8 @@ GeoJSON 등 지리정보(GIS)를 처리하는 UI를 설계하다 보면 해당 �
 
 핵심 코드만 남기기 위해 이벤트 핸들러 등 DOM과 관련된 코드는 모두 제거하고 인터럽트는 간단히 타이머 함수를 사용하였다.
 
+## JavaScript
+
 [자바스크립트 데모 보기](https://codesandbox.io/s/timeout-generator-y6okhw?file=/src/index.js){: .btn .btn--info}{:target="\_blank"}
 
 ```javascript
@@ -64,6 +66,8 @@ async function waitUntil(generator, timeWait) {
 여기서는 `arr` 배열에 넣었다가 한번에 돌려줬지만 실제 UI로직에 이를 적용할 때에는 UI에 해당 POI를 배치하는 코드가 들어갸게 된다. 함수의 원래 목적이 타임아웃 전까지 **"보여줄 수 있는 건 최대한 보여준다"** 이므로 하나 처리될 때마다 UI를 갱신해 주어야 하는 것이다. 더 최적화하고 싶다면 `setInterval`이나 `requestAnimationFrame`함수를 중간에 끼워줄 수도 있을테지만, 아마 그 정도 최적화는 프레임워크가 이미 해 놨을 것이다.
 
 이제 이 자바스크립트 코드의 타입스크립트 버전을 볼 차례다.
+
+## TypeScript
 
 [타입스크립트 데모 보기](https://codesandbox.io/s/timeout-generator-ts-zvzivq){: .btn .btn--info}{:target="\_blank"}
 
