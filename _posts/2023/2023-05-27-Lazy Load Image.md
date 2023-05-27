@@ -8,7 +8,7 @@ tags: ["2023", "dev", "svelte", "javascript", "typescript", "image", "lazy"]
 개인적인 필요로 Lazy load image svelte component를 만들었다. 이 컴포넌트에는 두 가지 요구사항이 있었는데
 
 1. 뷰포트에 이미지 컴포넌트가 들어올 때까지 이미지의 로드를 보류한다.
-2. 여러 URL중 첫 번째로 로드되는 이미지를 로드한다.
+2. 여러 URL중 첫 번째로 로드되는 이미지를 보여주고 나머지는 무시한다.
 
 ## 첫 번째 방법: picture 태그 사용
 
