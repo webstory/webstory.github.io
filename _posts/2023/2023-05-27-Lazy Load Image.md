@@ -99,3 +99,11 @@ tags: ["2023", "dev", "svelte", "javascript", "typescript", "image", "lazy"]
 하지만 브라우저 상에서 콘솔 로그에 `404 Not Found`에러가 폭주하는 현상은 막을 수가 없다. 결국 서버 측에서 URL이 로드 가능한지 확인 후 로드 가능한 URL만을 클라이언트로 넘겨주게 만들었는데, 이 과정에서 처음의 목적은 상실했지만 Lazy Load기능은 살아남았고, 이렇게 블로그로 정리한다.
 
 참고로 서버 측에서는 CORS와 상관없이 자유롭게 URL을 검사할 수 있다.
+
+## 내용추가: loading 속성
+
+```html
+<img loading="lazy" src="{src}" alt="{alt}" />
+```
+
+이렇게 하면 IntersectionObserver를 사용하지 않아도 브라우저가 알아서 Lazy Load를 해준다고 하는데, 잘 작동하지 않는 것 같다. 적어도 파이어폭스에서 로딩했을 때 모든 이미지를 한 번에 로드하는 것처럼 보였다.
